@@ -78,6 +78,7 @@
 
     .our-partners .our-partners__container{
         gap: 2rem;
+        grid-template-columns: 1fr;
     }
 
 
