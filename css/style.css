@@ -64,7 +64,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   ::-webkit-scrollbar-track {
@@ -342,6 +342,53 @@ header{
 
 .view-more:hover{
     text-decoration: underline;
+}
+
+/* ------------------------ */
+
+.votes{
+    left: 29%;
+    position: relative;
+}
+
+.votes span{
+    display: none;
+}
+
+.votes:hover .vote{
+    display: inline;
+}
+
+.votes:hover i:nth-child(1){
+    display: none;
+}
+
+.votes i{
+    position: relative;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.votes i:nth-child(1){
+    position: absolute;
+    font-size: 2rem;
+}
+
+.vote{
+    width: 10rem;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    background-size: 4rem;
+    display: none;
+    position: absolute;
+    border-radius: 0.3rem;
+    transition: all 1s cubic-bezier(.215, .61, .355, .1);
+    left: 0;
+}
+
+
+#number{
+    width: 85px;
 }
 
 /* ========================= FAQ ======================= */

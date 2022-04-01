@@ -39,10 +39,23 @@ menuBtn.addEventListener('click', () => {
     closeBtn.style.display = "inline-block";
     menuBtn.style.display = "none";
 
-    menuLi1.style.display = "inline-block";
-    menuLi2.style.display = "inline-block";
-    menuLi3.style.display = "inline-block";
+    // menuLi1.style.display = "imline-block";
+    // menuLi2.style.display = "inline-block";
+    // menuLi3.style.display = "inline-block";
+
 }) 
+
+function media(x) {
+
+    if (x.matches) { // If media query matches
+      menu.style.display = 'none';
+    }
+
+  }
+  
+  var x = window.matchMedia("(max-width: 1024px)")
+  media(x) // Call listener function at run time
+  x.addListener(media) // Attach listener function on state changes
 
 // CLOSE NAV MENU
 

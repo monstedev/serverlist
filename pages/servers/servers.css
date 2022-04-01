@@ -255,7 +255,7 @@
     display:inline-block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     
     .search{
         width: 80%;
@@ -281,16 +281,14 @@
     }
 
     .verified{
-        width: 7rem;
-        height: 7rem;
+        width: 5rem;
+        height: 5rem;
     }
-    .verified i{
-        font-size: 3rem;
-    }
+    
     
 
     .votes{
-        left: 76%;
+        left: 40%;
     }
     .votes #number{
         font-size: 2.5rem;
